@@ -20,7 +20,7 @@
     -->
 
   <!-- SEO -->
-  <title>Pontem</title>
+  <title>BRIDGEAID</title>
   <meta name="description"
     content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
 
@@ -41,9 +41,9 @@
   <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
   <!-- FACEBOOK -->
-  <meta property="og:url" content="http://www.pontem.app"> <!-- EDIT -->
+  <meta property="og:url" content="http://www.bridgeaid.app"> <!-- EDIT -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Pontem" />
+  <meta property="og:title" content="BRIDGEAID" />
   <meta property="og:description"
     content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
   <meta property="og:updated_time" content="2017-01-04T16:27:50"> <!-- EDIT -->
@@ -83,7 +83,7 @@
             Empowering NGOs in times of crisis
           </p>
 
-          <p><a href="https://pontem.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+          <p><a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
                 src="./static/images/logos/pontem.svg" alt="BridgeAId"></a></p>
 
           <!-- <nav>
@@ -94,14 +94,40 @@
             </ul>
           </nav> -->
         </div>
+        <div style="text-align: center;">
+          <form id="email-form" style="background-color: #f7f9fb; text-align: center;">
+            <fieldset style="border-color: #ffffff00;background-color: transparent;">
+              <p>
+                <input style="border-color: #f7f9fb;" type="email" name="email" placeholder="your@email.com" required>
+              </p>
+            </fieldset>
+
+            <p style="border-color: #f21962;">
+              <button style="width: auto; background-color: #f21962; border-color: #ffffff; color: #fff; text-shadow: none;" type="submit">Stay
+                Tuned</button>
+            </p>
+          </form>
+        </div>
+
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzWaNt7HgJX77mtnHgez3kJE1ijsAI_bEjEZJXlLAKgJP9dqvc/exec'
+          const form = document.forms['email-form']
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
 
         <!-- <p class="text-context; aligncenter">
           <a href="#slide=6">
             Built by BridgeAId
           </a>
         </p> -->
-        <p class="text-context; aligncenter">
-          Help us by filling out this <a href="https://forms.gle/8xUao23mzWbT6R3Y7">Survey</a>
+        <p class="text-context; aligncenter" style="padding-top: 5%;">
+          If you want to be extremely helpful, you can also help us by filling out this <a href="https://forms.gle/8xUao23mzWbT6R3Y7">Survey</a>
         </p>
         <!-- .end .wrap -->
       </section>
@@ -114,7 +140,9 @@
             </div>
             <div class="column">
               <p class="text-intro"> The <strong>most vulnerable</strong> populations by COVID-19 are in
-                critical need of <strong>help</strong>. <strong>Pontem</strong> is a platform that
+                critical need of help.</p>
+              <p class="text-intro">
+<strong>BRIDGEAID</strong> is a platform that
                 tackles the <strong>communication problems</strong> between <strong>those eager to help</strong> and
                 <strong>NGOs</strong>.
               </p>
@@ -180,20 +208,20 @@
           <div class="grid vertical-align">
             <div class="column">
               <figure style="text-align: center;">
-                <img class="aligncenter size-30" src="./static/images/app-image.png" alt="Pontem App">
+                <img class="aligncenter size-30" src="./static/images/app-image.png" alt="BRIDGEAID App">
               </figure>
             </div>
             <!-- end column-->
             <div class="column">
               <h2>
-                Pontem app
+                BRIDGEAID
               </h2>
               <p class="text-intro">Available now for all devices</p>
               <p>With this tool, individuals eager to help can access information of the closest NGOs in their area,
                 obtain information about them and make donations.</p>
               <p style="text-align: center;">
-                <a href="https://pontem.glideapp.io/">
-                  <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="Pontem">
+                <a href="https://bridgeaid.glideapp.io/">
+                  <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="BRIDGEAID">
                 </a>
               </p>
             </div>
@@ -215,36 +243,11 @@
         <!-- .end .wrap -->
       </section>
       <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-30">
-          <form id="email-form" style="background-color: #f21962; color:#f7f9fb">
-            <fieldset style="border-color: #f7f9fb;">
-              <p><label>Your Email</label>
-                <input style="border-color: #f7f9fb;" type="email" name="email" placeholder="your@email.com" required>
-              </p>
-            </fieldset>
-
-            <p style="border-color: #f21962;">
-              <button style="background-color: #3d78fd; border-color: #ffffff; color: #ffffff" type="submit">Stay
-                Tuned</button>
-            </p>
-          </form>
 
 
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzWaNt7HgJX77mtnHgez3kJE1ijsAI_bEjEZJXlLAKgJP9dqvc/exec'
-            const form = document.forms['email-form']
-
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
 
 
-          <p><a href="https://pontem.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+          <p><a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
                 src="./static/images/logos/pontem.svg" alt="BridgeAId"></a></p>
         </div>
         <!-- .end .wrap -->
