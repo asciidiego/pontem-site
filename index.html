@@ -2,6 +2,10 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -74,27 +78,13 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap aligncenter">
-          <h1 class="text-landing">Pontem</h1>
+          <h1 class="text-landing">BridgeAId</h1>
           <p class="text-intro">
             Empowering NGOs in times of crisis
           </p>
-          <ul class="flexblock slide-bottom">
-            <!-- <li style="text-align: center;">
-              <div>
-                <img class="blacklogo" src="../static/images/logos/appstore.svg" alt="App Store">
-              </div>
-            </li>
-            <li style="text-align: center;">
-              <div>
-                <img class="blacklogo" src="../static/images/logos/playstore.svg" alt="Play Store">
-              </div>
-            </li> -->
-            <li>
-              <a href="https://pontem.glideapp.io/">
-                <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="Launch">
-              </a>
-            </li>
-          </ul>
+
+          <p><a href="https://pontem.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+                src="./static/images/logos/pontem.svg" alt="BridgeAId"></a></p>
 
           <!-- <nav>
             <ul>
@@ -105,11 +95,11 @@
           </nav> -->
         </div>
 
-	<p class="text-context; aligncenter">
-		<a href="#slide=6">
-			Built by BridgeAId
-		</a>
-	</p>
+        <!-- <p class="text-context; aligncenter">
+          <a href="#slide=6">
+            Built by BridgeAId
+          </a>
+        </p> -->
         <p class="text-context; aligncenter">
           Help us by filling out this <a href="https://forms.gle/8xUao23mzWbT6R3Y7">Survey</a>
         </p>
@@ -203,7 +193,7 @@
                 obtain information about them and make donations.</p>
               <p style="text-align: center;">
                 <a href="https://pontem.glideapp.io/">
-                  <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="Launch">
+                  <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="Pontem">
                 </a>
               </p>
             </div>
@@ -221,6 +211,41 @@
         </div>
         <div class="content-center" style="margin-top: 40px;">
           <img class="size-100" src="./static/images/team.png">
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-30">
+          <form id="email-form" style="background-color: #f21962; color:#f7f9fb">
+            <fieldset style="border-color: #f7f9fb;">
+              <p><label>Your Email</label>
+                <input style="border-color: #f7f9fb;" type="email" name="email" placeholder="your@email.com" required>
+              </p>
+            </fieldset>
+
+            <p style="border-color: #f21962;">
+              <button style="background-color: #3d78fd; border-color: #ffffff; color: #ffffff" type="submit">Stay
+                Tuned</button>
+            </p>
+          </form>
+
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzWaNt7HgJX77mtnHgez3kJE1ijsAI_bEjEZJXlLAKgJP9dqvc/exec'
+            const form = document.forms['email-form']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+          <p><a href="https://pontem.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+                src="./static/images/logos/pontem.svg" alt="BridgeAId"></a></p>
         </div>
         <!-- .end .wrap -->
       </section>
