@@ -2,9 +2,11 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
-    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,13 +23,16 @@
 
     <!-- SEO -->
     <title>BRIDGEAID</title>
-    <meta name="description" content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
+    <meta name="description"
+        content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
 
     <!-- URL CANONICAL -->
     <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
 
     <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
@@ -42,7 +47,8 @@
     <!-- EDIT -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="BRIDGEAID" />
-    <meta property="og:description" content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
+    <meta property="og:description"
+        content="The most vulnerable populations are in critical need of help, communities (businesses and individuals, non profits) can help. We are creating the platform to connect them.">
     <meta property="og:updated_time" content="2017-01-04T16:27:50">
     <!-- EDIT -->
     <meta property="og:image" content="./static/images/pontem-share-image.png">
@@ -61,6 +67,9 @@
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
+
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/team.css">
+
 </head>
 
 <body>
@@ -82,12 +91,13 @@
                     </p>
                     <p class="text">
                         <a href="https://covid19challenge.mit.edu/">
-              Update: we won the the MIT COVID-19 challenge! (Track A)
-            </a>
+                            Update: we won the the MIT COVID-19 challenge! (Track A)
+                        </a>
                     </p>
 
                     <p>
-                        <a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="BridgeAId"></a>
+                        <a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+                                src="./static/images/logos/pontem.svg" alt="BridgeAId"></a>
                     </p>
 
                     <!-- <nav>
@@ -102,13 +112,16 @@
                     <form id="email-form" style="background-color: #f7f9fb; text-align: center;">
                         <fieldset style="border-color: #ffffff00;background-color: transparent;">
                             <p>
-                                <input style="border-color: #f7f9fb;" type="email" name="email" placeholder="your@email.com" required>
+                                <input style="border-color: #f7f9fb;" type="email" name="email"
+                                    placeholder="your@email.com" required>
                             </p>
                         </fieldset>
 
                         <p style="border-color: #f21962;">
-                            <button style="width: auto; background-color: #f21962; border-color: #ffffff; color: #fff; text-shadow: none;" type="submit">Stay
-                Tuned</button>
+                            <button
+                                style="width: auto; background-color: #f21962; border-color: #ffffff; color: #fff; text-shadow: none;"
+                                type="submit">Stay
+                                Tuned</button>
                         </p>
                     </form>
                 </div>
@@ -120,9 +133,9 @@
                     form.addEventListener('submit', e => {
                         e.preventDefault()
                         fetch(scriptURL, {
-                                method: 'POST',
-                                body: new FormData(form)
-                            })
+                            method: 'POST',
+                            body: new FormData(form)
+                        })
                             .then(response => console.log('Success!', response))
                             .catch(error => console.error('Error!', error.message))
                     })
@@ -143,9 +156,11 @@
                             <h3><strong>Building bridges to connect humans</strong></h3>
                         </div>
                         <div class="column">
-                            <p class="text-intro"> The <strong>most vulnerable</strong> populations by COVID-19 are in critical need of help.</p>
+                            <p class="text-intro"> The <strong>most vulnerable</strong> populations by COVID-19 are in
+                                critical need of help.</p>
                             <p class="text-intro">
-                                <strong>BRIDGEAID</strong> is a platform that tackles the <strong>communication problems</strong> between <strong>those eager to help</strong> and
+                                <strong>BRIDGEAID</strong> is a platform that tackles the <strong>communication
+                                    problems</strong> between <strong>those eager to help</strong> and
                                 <strong>NGOs</strong>.
                             </p>
                         </div>
@@ -189,9 +204,12 @@
                     <div class="grid vertical-align">
                         <div class="column">
                             <p class="text-intro">
-                                Social Services are experiencing an <strong>exponential increase of demand</strong>. They need
-                                <strong>human and economic resources</strong>. We decided to take the first step in our mission by focusing on connecting <strong>individuals eager to help </strong> and <strong>Food
-                  Pantries</strong> in the Boston area.
+                                Social Services are experiencing an <strong>exponential increase of demand</strong>.
+                                They need
+                                <strong>human and economic resources</strong>. We decided to take the first step in our
+                                mission by focusing on connecting <strong>individuals eager to help </strong> and
+                                <strong>Food
+                                    Pantries</strong> in the Boston area.
                             </p>
                         </div>
                         <div class="column">
@@ -206,7 +224,8 @@
                     <div class="grid vertical-align">
                         <div class="column">
                             <figure style="text-align: center;">
-                                <img class="aligncenter size-30" src="./static/images/app-image.png" alt="BRIDGEAID App">
+                                <img class="aligncenter size-30" src="./static/images/app-image.png"
+                                    alt="BRIDGEAID App">
                             </figure>
                         </div>
                         <!-- end column-->
@@ -215,10 +234,12 @@
                                 BRIDGEAID
                             </h2>
                             <p class="text-intro">Available now for all devices</p>
-                            <p>With this tool, individuals eager to help can access information of the closest NGOs in their area, obtain information about them and make donations.</p>
+                            <p>With this tool, individuals eager to help can access information of the closest NGOs in
+                                their area, obtain information about them and make donations.</p>
                             <p style="text-align: center;">
                                 <a href="https://bridgeaid.glideapp.io/">
-                                    <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="BRIDGEAID">
+                                    <img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg"
+                                        alt="BRIDGEAID">
                                 </a>
                             </p>
                         </div>
@@ -231,29 +252,205 @@
             <section>
                 <!--.wrap = container (width: 90%) -->
                 <span class='background' style="background-color:#f21962"></span>
-                <div class="content-center" style="color:#fff">
-                    <h2><strong>Our global team</strong></h2>
+                <div class="wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="heading-title text-center" style="color: #fff;">
+                                <h3 class="title">A global team for a global challenge </h3>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/sophie.jpeg" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hi there!</h4> -->
+                                            <p>Pharma Enterprenour, MIT SLOAN, EDM 2020 alum.</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>sophie chapelle</h5>
+                                    <span>boston</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/yasmina.jpg" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hi there!</h4> -->
+                                            <p>McGill University, Anatomy and Cell Biology. </p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>yasmina richa</h5>
+                                    <span>canada</span>
+                                </div>
+                            </div>
+                            <!-- </div>
+                        <div class="row"> -->
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/thea.jpg" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hi there!</h4> -->
+                                            <p>Wniversity College of London, Management Science.</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>Thea Badaro</h5>
+                                    <span>London</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/chloe.png" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hi there !</h4> -->
+                                            <p>american university of beirut, computer science.</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>chloe avedissian</h5>
+                                    <span>beirut</span>
+                                </div>
+                            </div>
+                            <!-- </div>
+                        <div class="row"> -->
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/hanhan.jpeg" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hey there!</h4> -->
+                                            <p>columbia university, journalism &amp; statistics.</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>hanhan j. li</h5>
+                                    <span>new york</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-md-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/diego.jpeg" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hi there!</h4> -->
+                                            <p>polaroo, head of ai</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>diego rodríguez</h5>
+                                    <span>maracaibo</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="team-member">
+                                    <div class="team-img">
+                                        <img src="./static/images/team/victor.png" alt="team member"
+                                            class="img-responsive">
+                                    </div>
+                                    <div class="team-hover">
+                                        <div class="desk">
+                                            <!-- <h4>hey there!</h4> -->
+                                            <p>plyzer intelligence, ml researcher. recurse center alum, nyc.</p>
+                                        </div>
+                                        <div class="s-link">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-title">
+                                    <h5>Víctor Pérez</h5>
+                                    <span>Barcelona</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
-                <div class="content-center" style="margin-top: 40px;">
+
+
+
+
+                <!-- <div class="content-center" style="margin-top: 40px;">
                     <img class="size-100" src="./static/images/team.png">
-                </div>
+                </div> -->
                 <!-- .end .wrap -->
+
+                <div class="container">
             </section>
             <section>
-
-
-
-
                 <p>
-                    <a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter" src="./static/images/logos/pontem.svg" alt="BridgeAId"></a>
+                    <a href="https://bridgeaid.glideapp.io/" title="BridgeAId"><img class="blacklogo aligncenter"
+                            src="./static/images/logos/pontem.svg" alt="BridgeAId"></a>
                 </p>
-                </div>
                 <!-- .end .wrap -->
             </section>
             <section>
                 <div>
                     <p class="text-context; aligncenter">
-                        If you want to be extremely helpful, you can also help us by filling out this <a href="https://forms.gle/8xUao23mzWbT6R3Y7">Survey</a>
+                        If you want to be extremely helpful, you can also help us by filling out this <a
+                            href="https://forms.gle/8xUao23mzWbT6R3Y7">Survey</a>
                     </p>
                 </div>
             </section>
@@ -275,5 +472,9 @@
     <script defer src="./static/js/svg-icons.js"></script>
 
 </body>
+
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
 </html>
